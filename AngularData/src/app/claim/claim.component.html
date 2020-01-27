@@ -1,0 +1,100 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/home" routerLinkActive="active" >HOME</a></li>
+          <li><a routerLink="/login" routerLinkActive="active" >LOGIN</a></li>
+          <li><a routerLink="/services" routerLinkActive="active" >SERVICES</a></li>
+          <li><a routerLink="/pricing" routerLinkActive="active" >PRICING</a></li>
+          <li><a routerLink="/claim" routerLinkActive="active" >CLAIM</a></li>
+          <li><a routerLink="/renew" routerLinkActive="active" >RENEW</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active" >CONTACT</a></li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8" >
+        <h2>SB Car Insurance Claim Process</h2><br>
+        
+        <p>SB Car insurance comes as a much-needed respite in the event of an accident that may cause damage to your vehicle.
+          Insurance claims help pay for the repair of the vehicle and other financial issues incurred.
+           While you can opt for the reimbursement claim process, choosing cashless claims method is an absolute convenience.
+           All you have to do is get your car repaired at any of our network garages that’s closest to you and we will settle the bills directly with the garage. 
+           As on 1st May, 2018, we have a network of 5900+ garages.
+        </p><br>
+        <p>Filing or pursuing insurance claims might have been a headache, but now with digitization, the entire insurance claim process has become simple and easy. At ICICI Lombard, we provide E-Claim services wherein you can a lodge a claim on the website as well as on the Insure app. You can use InstaSpect, a live video inspection feature on the Insure app that helps you register your claim instantly and get immediate approvals. With InstaSpect, you will be connected to a claim manager who will assist you with inspecting your vehicle over a video call.</p><br>
+        <br>
+        <h4>Claims </h4>
+        <li>Note the number of the other vehicle involved in the accident, if any.</li>
+        <li>Note down the names and contact details of witnesses, if any.</li>
+        <li>Contact our toll free number 1800 2666 and get your claim number / reference number or alternatively send SMS as “CLAIM” to 575758 and you will receive call from call center representative.</li>
+        <li>The Call Centre Representative will provide you with the details of the documents required for claim processing and also details of our preferred cashless garage.</li>
+        <li>File an FIR at the police station nearest to the accident spot in case of third party property damage or bodily injury, theft, malicious damage, key loss and major accidents.</li>
+        <li>Take the vehicle immediately to the suggested garage.</li>
+        <li>Our Customer Service Manager (CSM) will contact you within 24 hours of registering the claim.</li>
+        <li>Submit all the required documents to the dealer / CSM and get them verified with the originals.</li>
+        <li>Our CSM will get the estimate for the repairs of your vehicle and give approval after assessment.</li>
+        <li>Payments that need to borne by us at our preferred garage will be made directly to the garage on completion of the repairs.</li>
+        <li>Our CSM will inform you about the balance amount that has to be paid by you as per policy terms and conditions.</li>
+        <br>
+        
+        <h4>Reimbursement Claims</h4>
+        <li>Note the number of the other vehicle involved in the accident, if any</li>
+        <li>Note down the names and contact details of witnesses, if any.</li>
+        <li>Contact our toll free number 1800 2666 and get your claim number / reference number or alternatively send SMS as “CLAIM” to 575758 and you will receive call from call center representative</li>
+        <li>Our Customer Service Manager (CSM) will contact you within 24 hours of registering the claim.</li>
+        <li>Submit all the required documents to the CSM and get them verified with the originals.</li>
+        <li>SB Insurance will reimburse the approved claim amount directly to the customer.</li>
+        <br>
+      </div>
+
+      <div class="col-md-6 login-form-2">
+        <h3>Fill ToClaim</h3>
+        <form [formGroup]="custLogin" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" id="accidentAddr" formControlName="accidentAddr" class="form-control" placeholder="address of accident*" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" id="Email" formControlName="accidentAddr" class="form-control" placeholder="Email*" value="" />
+          </div>
+          <div class="form-group">
+            <input type="tel" id="mobile" formControlName="mobile" class="form-control" placeholder="mobile*" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" id="carRegNo" formControlName="carRegNo" class="form-control" placeholder="car registration number*" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" id="carModel" formControlName="carModel" class="form-control" placeholder="car model*" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" id="insuranceName" formControlName="insuranceName" class="form-control" placeholder="insurance name*" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" id="insuranceNo" formControlName="insuranceNo" class="form-control" placeholder="insurance no*" value="" />
+          </div>
+
+            <div class="form-group">
+                <input type="password" id="Password" formControlName="Password" class="form-control" placeholder="Your Password *" value="" />
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btnSubmit" value="Claim" />
+            </div>
+           </form>
+      </div>
+
+    </div>
+  </div>
+
+  <router-outlet></router-outlet> 
+

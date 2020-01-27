@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> SB CAR INSURANCE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/aboutus" routerLinkActive="active" >ABOUT US</a></li>
+          <li><a routerLink="/login" routerLinkActive="active" >LOGIN</a></li>
+          <li><a routerLink="/services" routerLinkActive="active" >SERVICES</a></li>
+          <li><a routerLink="/pricing" routerLinkActive="active" >PRICING</a></li>
+          <li><a routerLink="/claim" routerLinkActive="active" >CLAIM</a></li>
+          <li><a routerLink="/renew" routerLinkActive="active" >RENEW</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active" >CONTACT</a></li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-left">
+    <h1>SB <br>Car Insurance </h1>
+    <p>Prices from $175 </p>
+  </div>
+  
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>Why our customers love us?</h2>
+  <h4>And, we think you will too.</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home logo-small"></span>
+      <h4>1 dedicated garage</h4>
+      <p>for every 14* customers claims</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-fast-forward logo-small"></span>
+      <h4>Instant motor claims</h4>
+      <p>through our Insure app</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone-alt logo-small"></span>
+      <h4>24x7 customer support</h4>
+      <p><li>Call Center</li><li>50+ branches*</li><li>chat</li></p>
+    </div>
+  </div>
+  <br><br>
+
+</div>
+
+<div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+<h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+    </div>
+  </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<router-outlet></router-outlet>
+</body>
+</html>
+

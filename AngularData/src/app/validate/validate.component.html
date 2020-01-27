@@ -1,0 +1,33 @@
+<form class="form-horizontal" [formGroup]="custForm" (ngSubmit)="onSubmit()">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Get what your car needs</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="carRegNo">Car registration Number</label>
+          <div class="col-sm-8">
+            <input id="carRegNo" type="text" class="form-control" formControlName="carRegNo">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="email">Email</label>
+          <div class="col-sm-8">
+            <input id="email" type="text" class="form-control" formControlName="email">
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="mobile">Mobile</label>
+            <div class="col-sm-8">
+              <input id="mobile" type="number" class="form-control" formControlName="mobile">
+            </div>
+          </div>
+  
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>

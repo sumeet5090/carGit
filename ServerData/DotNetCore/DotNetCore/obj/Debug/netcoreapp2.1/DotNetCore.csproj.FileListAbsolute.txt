@@ -1,0 +1,5 @@
+C:\CarProject\ServerData\DotNetCore\DotNetCore\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\CarProject\ServerData\DotNetCore\DotNetCore\bin\Debug\netcoreapp2.1\appsettings.json
+C:\CarProject\ServerData\DotNetCore\DotNetCore\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\CarProject\ServerData\DotNetCore\DotNetCore\obj\Debug\netcoreapp2.1\DotNetCore.AssemblyInfoInputs.cache
+C:\CarProject\ServerData\DotNetCore\DotNetCore\obj\Debug\netcoreapp2.1\DotNetCore.AssemblyInfo.cs

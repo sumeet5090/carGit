@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/home" routerLinkActive="active" >HOME</a></li>
+        <li><a routerLink="/login" routerLinkActive="active" >LOGIN</a></li>
+        <li><a routerLink="/services" routerLinkActive="active" >SERVICES</a></li>
+        <li><a routerLink="/pricing" routerLinkActive="active" >PRICING</a></li>
+        <li><a routerLink="/claim" routerLinkActive="active" >CLAIM</a></li>
+        <li><a routerLink="/renew" routerLinkActive="active" >RENEW</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" >CONTACT</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Us</h2><br>
+        <h4>SB Car Insurance</h4>
+        <p>SB Car Insurance is a private sector general insurance company in India.</p>
+        <p> Founded in November 2016, the company received its license from the Insurance Regulatory and Development Authority of India (IRDAI) in September 2017. </p>
+        <p>follows an online-led model and hence all operations for the company are offered through the digital platform.</p><br>
+        <h4>History</h4>
+        <p>This general insurance company was founded by Sumeet Boga, and he serves as the Chief Executive Officer </p>
+        <p>As of 2018, SB has raised $42 million in funding from investors such as Amazon, Accel Partners, SAIF Partners, Catamaran Ventures.</p>
+        <br>
+        <h4>
+          Parnerships
+        </h4>
+        <p>SB Car Insurance partnered with Ola cabs and launched an in-trip insurance program in more than 110 cities in India</p>
+        <p>SB Car Insurance partnered with Amazon India to provide mobile insurance plans on the retailer's website</p><br>
+        <a routerLink="/contact" routerLinkActive="active" >CONTACT US</a>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-signal logo"></span>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>

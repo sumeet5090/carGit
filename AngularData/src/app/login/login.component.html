@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/home" routerLinkActive="active" >HOME</a></li>
+        <li><a routerLink="/login" routerLinkActive="active" >LOGIN</a></li>
+        <li><a routerLink="/services" routerLinkActive="active" >SERVICES</a></li>
+        <li><a routerLink="/pricing" routerLinkActive="active" >PRICING</a></li>
+        <li><a routerLink="/claim" routerLinkActive="active" >CLAIM</a></li>
+        <li><a routerLink="/renew" routerLinkActive="active" >RENEW</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" >CONTACT</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="col-md-6 login-form-2">
+  <h3>Login</h3>
+  <form [formGroup]="custLogin" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <input type="text" id="Email" formControlName="Email" class="form-control" placeholder="Your Email *" value="" />
+      </div>
+      <div class="form-group">
+          <input type="password" id="Password" formControlName="Password" class="form-control" placeholder="Your Password *" value="" />
+      </div>
+      <div class="form-group">
+          <input type="submit" class="btnSubmit" value="Login" />
+      </div>
+      <div class="form-group">
+          <a href="forgotPwd" class="ForgetPwd" value="Login">Forget Password?</a>
+      </div>
+      <div class="form-group">
+        <a href="registration" class="ForgetPwd" value="Registration"><h4> New Registration !</h4></a>
+    </div>
+  </form>
+</div>
+
+<router-outlet></router-outlet>

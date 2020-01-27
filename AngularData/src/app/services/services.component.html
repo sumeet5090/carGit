@@ -1,0 +1,139 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/home" routerLinkActive="active" >HOME</a></li>
+        <li><a routerLink="/login" routerLinkActive="active" >LOGIN</a></li>
+        <li><a routerLink="/services" routerLinkActive="active" >SERVICES</a></li>
+        <li><a routerLink="/pricing" routerLinkActive="active" >PRICING</a></li>
+        <li><a routerLink="/claim" routerLinkActive="active" >CLAIM</a></li>
+        <li><a routerLink="/renew" routerLinkActive="active" >RENEW</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" >CONTACT</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid">
+  <h1>WHATS Covered In SB Car Insurance.</h1><br>
+
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"><a routerLink="/pricing" routerLinkActive="active" >third Party</a></th>
+          <th scope="col"><a routerLink="/pricing" routerLinkActive="active" >Comprehensive</a></th>
+          <th scope="col"><a routerLink="/pricing" routerLinkActive="active" >Comprehensive  + Zero Depreciation</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Damage TO a Third Party Vehicle</th>
+          <td>yes</td>
+          <td>yes</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <th scope="row">Own Damage</th>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <th scope="row">Theft</th>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <th scope="row">Damage due to fire</th>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+        </tr>        <tr>
+          <th scope="row">Damage due to natural causes</th>
+          <td>no</td>
+          <td>yes</td>
+          <td>yes</td>
+        </tr>        <tr>
+          <th scope="row">Personal Accident cover
+          </th>
+          <td>yes</td>
+          <td>yes</td>
+          <td>yes</td>
+        </tr>        <tr>
+          <th scope="row">Depreciation fees</th>
+          <td>no</td>
+          <td>no</td>
+          <td>yes</td>
+        </tr>        <tr>
+          <th scope="row">Engine protection</th>  
+          <td>no</td>
+          <td>optional addon</td>
+          <td>optional addon</td>
+        </tr>        <tr>
+          <th scope="row">NCB protection</th>
+          <td>no</td>
+          <td>optional addon</td>
+          <td>optional addon</td>
+          
+        </tr><tr>
+          <th scope="row">Invoice cover</th>
+          <td>no</td>
+          <td>optional addon</td>
+          <td>optional addon</td>  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  
+<div class="container-fluid text-center ">
+  <h2>Whats Not Covered</h2>
+  <h4>In SB Car insurance Policy</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-glass logo-small"></span>
+      <p>Damage when driving under the influence of alcohol or intoxicating drugs</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-flag logo-small"></span>
+      <p>Damage during war and similar conditions</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-thumbs-down logo-small"></span>
+      <p>Damage when policy is not active</p>
+    </div>
+    </div>
+    <br><br>
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cog logo-small"></span>
+      <p>Regular servicing and expenses due to wear and tear</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-alert logo-small"></span>
+      <p>Damage to tyres, tubes, and engine unless they are damaged due to an accident</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <p>Items stolen from your car</p>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
